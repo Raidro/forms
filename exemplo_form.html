@@ -1,0 +1,99 @@
+<html>
+
+</html>
+
+<head>
+
+
+    <meta charset="UTF-8">
+
+    <title>Formulario</title>
+
+
+</head>
+
+<body>
+    <h1 align="left">Formulario de Inscrição</h1>
+
+    <form action="">
+
+        <label for="nome">Nome:</label>
+
+        <!-- 
+
+        - o for se refere ao nome definido no componente
+        - O atributo for especifica para qual elemento de formulário um rótulo está vinculado
+
+        -->
+
+        <input type="text" placeholder="Digite seu nome" minlength="6" maxlength="30" id="nome" name="nome" required autofocus autocomplete="on">
+
+        <!-- 
+
+        -  quando ele falar de cliente, se refere a id, e quando se referir a servidor, nome
+        -  boa pratica, colocar minusculo no id e nome
+        -  maxlength é para definir um tamanho max de caracteres
+        -  required é para que precise preencher algo, não pode ser vazio
+        -  placeholder é para colocar o texto hiden
+
+        -->
+
+        <br>
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" placeholder="Digite sua senha" minlength="6" maxlength="24" id="senha" name="senha" required>
+
+        <br>
+        <br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" min="1" max="100" step="10">
+
+        <!-- 
+
+        - label:idade só aceita numeros, no chrome 
+        -  min numero aceito
+        -  max numero aceito
+        -  step define o solto nos numeros, de quanto em quanto ele vai
+        -  
+
+        -->
+
+        <br>
+        <br>
+
+
+        <label for="nota">Nota:</label>
+        <input type="range" name="nota" id="nota" min="0" max="5" value="5">
+        
+        <!-- 
+
+        -  value serve para definir aonde vai começar o numero definido no min/max
+        -  
+        -  
+        -  
+        -  
+
+        -->
+
+
+
+        <br>
+        <br>
+
+        <label for="date">Data de Nascimento:</label>
+        <input type="date" name="date" id="date" value="2019-06-10">
+        
+
+        <br>
+        <br>
+
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+
+</body>
+</html>
