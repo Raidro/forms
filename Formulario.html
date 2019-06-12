@@ -84,8 +84,14 @@
 
         <label for="cidade">Cidade:</label>
         <select name="cidade" id="cidade">
-            <!--Seletec é o menu de opção-->
-            <option value="">Selecione...</option>
+            <!--
+                - Seletec é o menu de opção
+            -->
+            <option disabled selected>Selecione...</option>
+            <!-- 
+               - disabled faz com que o texto fique sem poder ser selecionado
+               - O selected faz com que o primeiro texto seja o que está com esse atributo
+            -->
             <option value="ntl">Natal</option>
             <option value="poa">Porto Alegre</option>
             <option value="rec">Recife</option>
